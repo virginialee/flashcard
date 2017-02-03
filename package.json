@@ -1,0 +1,45 @@
+{
+  "name": "flashcard",
+  "version": "0.0.1",
+  "description": "Flashcard to help memorize or learn new words",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "test-orig": "node ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
+    "test": "mocha --require ignore-styles -w app/js/helpers/browser.js app/js/**/*_test.js",
+    "dev": "webpack-dev-server --colors"
+  },
+  "keywords": [
+    "flashcard"
+  ],
+  "author": "Virginia Lee",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.25.0",
+    "enzyme": "^2.5.1",
+    "expect": "^1.20.2",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^9.8.3",
+    "karma": "^1.3.0",
+    "karma-mocha": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.1.2",
+    "mocha-loader": "^1.0.0",
+    "phantomjs-polyfill": "0.0.2",
+    "react-addons-test-utils": "^15.3.2",
+    "style-loader": "^0.13.1",
+    "svg-react-loader": "^0.3.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.13.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.1"
+  }
+}
